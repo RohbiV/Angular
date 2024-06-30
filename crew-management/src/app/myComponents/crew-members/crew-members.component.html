@@ -1,1 +1,5 @@
 <p class="text-success">Crew Members</p>
+<app-crew-designation [message]="message" (msgEvent)="recievingMsg($event)"></app-crew-designation>
+<!-- this is parent component -->
+
+<p>{{ recievedMessage }}</p>
