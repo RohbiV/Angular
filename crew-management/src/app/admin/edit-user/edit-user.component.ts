@@ -7,5 +7,10 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './edit-user.component.css'
 })
 export class EditUserComponent {
+  userName:string = "Vasu";
+  anchor:string = "https://www.w3schools.com";
 
+  clicked() {
+    console.log("you just clicked a button!");
+  }
 }
