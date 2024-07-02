@@ -5,6 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: './add-user.component.html',
   styleUrl: './add-user.component.css'
 })
-export class AddUserComponent {
 
+export class AddUserComponent {
+  userName:string = "Vasu";
 }
