@@ -1,0 +1,14 @@
+<p>signal works!</p>.
+
+<!-- checking created signals  -->
+
+<p>Counter: {{ counter() }} </p>
+<p>username: {{ username() }} </p>
+<p>users: {{ users() }} </p>
+<p>achievements: {{ achieve().project }}
+    <br>
+    Technology Used: {{ achieve().tech }}
+</p>
+
+<button (click)="setCounter()">set Counter</button>
+<button (click)="updateCounter()">Update Counter</button>
