@@ -1,4 +1,6 @@
 import { Routes } from '@angular/router';
+import { TwoWayComponent } from './two-way/two-way.component';
+import { SignalComponent } from './signal/signal.component';
 
 export const routes: Routes = [
     {
@@ -8,6 +10,15 @@ export const routes: Routes = [
     {
         path: 'add-user',
         loadComponent: () => import('./admin/add-user/add-user.component').then(m=>m.AddUserComponent)
+    },
+    // adding routes of TwoWayComponent
+    {
+        path: 'two-way',             
+        component: TwoWayComponent
+    },
+    {
+        path: 'signal',
+        component: SignalComponent
     }
 ];
 
