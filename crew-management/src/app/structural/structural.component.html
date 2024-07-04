@@ -1,0 +1,26 @@
+<p>structural works!</p>
+
+@if (a > b) {
+    {{a}} is greater than {{b}}
+} @else {
+    {{b}} is greater than {{a}}
+}
+
+<!-- now using for loop using *ngFor and @For -->
+
+<div *ngFor="let item of myArray">
+    {{item}}
+</div>
+
+<!-- using @For -->
+@for (item of myArray; track $index) {
+    {{item}}
+}
+
+<div [ngClass]="{'active' : isActive, 'inactive': !isActive}">
+    this is the section to hide or show the button
+</div>
+<button (click)="toggleBtn()">Toggle Active</button>
+
+<input type="text" [(ngModel)]="name" placeholder="Enter text" />
+<p>Hello {{name}}</p>
