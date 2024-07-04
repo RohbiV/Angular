@@ -1,6 +1,7 @@
 import { Routes } from '@angular/router';
 import { TwoWayComponent } from './two-way/two-way.component';
 import { SignalComponent } from './signal/signal.component';
+import { StructuralComponent } from './structural/structural.component';
 
 export const routes: Routes = [
     {
@@ -19,6 +20,10 @@ export const routes: Routes = [
     {
         path: 'signal',
         component: SignalComponent
+    },
+    {
+        path: 'structural',
+        component: StructuralComponent
     }
 ];
 
